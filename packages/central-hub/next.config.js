@@ -8,6 +8,7 @@ const nextConfig = {
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
       '@/lib': path.resolve(__dirname, 'lib'),
+      '@/components/ui': path.resolve(__dirname, 'components/ui'),
     };
     return config;
   },
