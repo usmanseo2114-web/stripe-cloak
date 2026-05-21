@@ -1,0 +1,23 @@
+{
+  "name": "stripe-gateway-hub",
+  "version": "1.0.0",
+  "description": "A production-ready, enterprise-grade multi-tenant payment platform",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "wordpress-plugin"
+  ],
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "seed": "ts-node scripts/seed.ts"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.0"
+  }
+}

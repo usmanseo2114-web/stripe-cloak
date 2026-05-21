@@ -1,0 +1,17 @@
+{
+  "name": "@stripe-gateway/sdk",
+  "version": "1.0.0",
+  "description": "JavaScript/TypeScript SDK for Stripe Gateway Hub",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

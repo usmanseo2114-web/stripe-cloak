@@ -1,0 +1,47 @@
+{
+  "name": "@stripe-gateway/central-hub",
+  "version": "1.0.0",
+  "description": "Central hub for Stripe Gateway multi-tenant payment platform",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prisma": "prisma",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate",
+    "prisma:seed": "ts-node -r tsconfig-paths/register ../../scripts/seed.ts",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.10.0",
+    "@stripe-gateway/sdk": "workspace:*",
+    "bcryptjs": "^2.4.3",
+    "cls-hooked": "^4.2.2",
+    "cookie": "^0.6.0",
+    "next": "15.0.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "stripe": "^14.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cookie": "^0.6.0",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@vitest/ui": "^1.3.1",
+    "playwright": "^1.40.0",
+    "prisma": "^5.10.0",
+    "supertest": "^6.3.0",
+    "ts-node": "^10.9.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.3.1"
+  }
+}
