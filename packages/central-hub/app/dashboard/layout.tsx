@@ -1,6 +1,6 @@
 import '../../styles/globals.css';
 import type { Metadata } from 'next';
-import { Sidebar } from '@/components/sidebar';
+import Sidebar from '../../components/sidebar';
 
 export const metadata: Metadata = {
   title: 'Stripe Gateway Hub',
